@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sample Application Store</title>
+  <base href="/">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div style="display:inline-block;height:100vw;width:49vw;vertical-align: top;padding:30px">
+    <h3>Add a TODO task</h3>
+    Task Name: <input id="name" type="text" name="fname" ><br>
+    <br>
+    State:
+    <input type="radio" name="state" value="open" checked> Open<br>
+    <input type="radio" name="state" value="close"> Closed<br>
+    <br>
+    <button type="button" onclick="addTodoTask()">Add a task</button>
+    <br><br><br><br><br>
+    <button type="button" onclick="saveLatestState()">Save State to Store</button>
+    <button type="button" onclick="getLatestSavedState()">Get Last saved state Object</button>
+    <button type="button" onclick="renderOriginalData()">Get Original Object</button>
+  </div>
+
+  <div style="display:inline-block;height:100vw;width:50vw;vertical-align: top;padding:30px">
+      <h2>All TODO Tasks</h2>
+      <div id="listContainer">
+          <ul id="toDolist">
+          <ul>
+      </div>
+  </div>
+  
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="file:///Users/umeshpathak/Downloads/code-realm-javascript-master/store.js" ></script>
+  <script type="text/javascript" src="file:///Users/umeshpathak/Downloads/code-realm-javascript-master/TODO.js" ></script>
+
+</body>
+</html>
